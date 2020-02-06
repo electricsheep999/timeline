@@ -7,7 +7,7 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="main-menu">
         <ul>
           <li><a href=#tables>Tables</a></li>
           <li><a href=#forms>Forms</a></li>
@@ -16,7 +16,7 @@
     </header>
     <div class="html">
       <section id="tables">
-      <h1>HTML Tables</h1>
+      <h1>Tables</h1>
       <br>
       <table>
         <thead>
@@ -71,30 +71,40 @@
           <tr>
             <th>Tag</th>
             <th>Attributes</th>
-            <th>Description</th>
+            <th colspan="2">Description</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td rowspan="5">&lt;input&gt;</td>
-            <td>type</td>
-            <td>Type of input such as text(textbox), password, number.</td>
-          </tr>
+            <td rowspan="9">&lt;input&gt;</td>
+            <td rowspan="5">type</td>
+            <td colspan="2">Type of input such as:</td>
+            <tr>
+              <td>text</td><td> a simple textbox</td>
+            </tr>
+            <tr>
+              <td>password</td><td>a textbox that hides the input values in *astericks</td>
+            </tr>
+            <tr>
+              <td>number</td><td>textbox that reads numbers with option to add on the step attribute</td>
+            </tr>
+            <tr>
+              <td>range</td><td>slider type with option to add min, max and step attribute</td>
+            </tr>
           <tr>
             <td>id</td>
-            <td>id of the table that matches with &lt;label&gt; or any other.</td>
+            <td colspan="2">id of the table that matches with &lt;label&gt; or any other</td>
           </tr>
           <tr>
             <td>name</td>
-            <td>Description of the input value such as "username". When sent, it will be displayed as name=value</td>
+            <td colspan="2">Description of the input value such as "username". When sent, it will be displayed as name=value</td>
           </tr>
           <tr>
             <td>value</td>
-            <td>Value of the input. If you want to pre-fill the input, define a value.</td>
+            <td colspan="2">Value of the input. If you want to pre-fill the input, define a value</td>
           </tr>
           <tr>
             <td>step</td>
-            <td>Amount that increases when you have a "number" input type. Set the value to "1" and arrows will increase or decrease the value in the input by 1.</td>
+            <td colspan="2">Amount that increases when you have a 'number' or 'range' input type. Set the value to "1" and arrows will increase or decrease the value in the input by 1</td>
           </tr>
         </tbody>
       </table>
