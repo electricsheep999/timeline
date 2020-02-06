@@ -6,7 +6,16 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href=#tables>Tables</a></li>
+          <li><a href=#forms>Forms</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="html">
+      <section id="tables">
       <h1>HTML Tables</h1>
       <br>
       <table>
@@ -52,7 +61,40 @@
         </tr>
         </tbody>
       </table>
-      <p>test</p>
+    </section>
+    <section id="forms">
+      <h1>Forms</h1>
+      <p>Important things to remember about forms</p>
+      <table>
+        <thead>
+
+          <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4">&lt;input&gt;</td>
+            <td>type</td>
+            <td>Type of input such as text(textbox), password.</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>id of the table that matches with &lt;label&gt; or any other.</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>Description of the input value such as "username". When sent, it will be displayed as name=value</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>Value of the input. If you want to pre-fill the input, define a value.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
     </div>
   </body>
 
