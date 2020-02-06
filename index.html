@@ -75,8 +75,13 @@
           </tr>
         </thead>
         <tbody>
-            <td rowspan="11">&lt;input&gt;</td>
-            <td rowspan="7">type</td>
+     <tr><td rowspan="2">&lt;form&gt;</td><td>action</td><td colspan="2">Where to send your form inputs. Add destination url</td>
+    </tr>
+    <tr>
+      <td>method</td><td colspan="2">tells the form what to do with that information once it’s sent. Uses HTTP verb such as "POST" and "PUT"</td>
+    </tr>
+            <td rowspan="17">&lt;input&gt;</td>
+            <td rowspan="8">type</td>
             <td colspan="2">Type of input such as:</td>
             <tr>
               <td>text</td><td> a simple textbox</td>
@@ -96,6 +101,10 @@
             <tr>
               <td>radio</td><td>a simple radio button</td>
             </tr>
+            <tr>
+              <td>submit</td><td>creates a submit button</td>
+            </tr>
+            
           <tr>
             <td>id</td>
             <td colspan="2">id of the table that matches with &lt;label&gt; or any other</td>
@@ -111,6 +120,33 @@
           <tr>
             <td>step</td>
             <td colspan="2">Amount that increases when you have a 'number' or 'range' input type. Set the value to "1" and arrows will increase or decrease the value in the input by 1</td>
+          </tr>
+          <tr>
+            <td>list</td><td colspan="2">when using &lt;datalist&gt; make sure the value matches datalist id</td>
+          </tr>
+          <tr>
+            <td>required</td><td colspan="2">makes input required</td>
+          </tr>
+          <tr>
+            <td>min / max</td><td colspan="2">sets the minimum or maximum for number type</td>
+          </tr>
+          <tr>
+            <td>minlength / maxlength</td><td colspan="2">sets the minimum or maximum character length for text type</td>
+          </tr>
+          <tr>
+            <td>pattern</td><td colspan="2">assign a regular expression(regex) e.g. pattern="[a-zA-Z0-9]+" requires input to include only numbers and latin characters.</td>
+          </tr>
+          <tr>
+            <td>&lt;select&gt;</td>
+            <td colspan="3">creates a dropdown selector. Pair it with &lt;option value=""&gt; to create the value for each selection</td>
+          </tr>
+          <tr>
+            <td>&lt;datalist&gt;</td>
+            <td colspan="3">Pair it with &lt;input type="text" list=""&gt; which value corresponds to &lt;datalist&gt; id. Add &lt;option value=""&gt; for each searchable value</td>
+          </tr>
+          <tr>
+            <td>&lt;textarea&gt;</td>
+            <td colspan="3">create a larger textbox defined by row="" and col="" attribute</td>
           </tr>
         </tbody>
       </table>
